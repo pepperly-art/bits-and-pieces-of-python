@@ -2,7 +2,9 @@
 little python projects / homework / etc used to learn
 
 ## links
-[Python Cheat sheet](https://quickref.me/python.html) | [Future Coder](https://futurecoder.io/course/) | [30 days of Python](https://github.com/Asabeneh/30-Days-Of-Python)
+[Python Cheat sheet](https://quickref.me/python.html) | [Future Coder](https://futurecoder.io/course/) | [30 days of Python](https://github.com/Asabeneh/30-Days-Of-Python) | [learnxinyminutes](https://learnxinyminutes.com/python/)
+
+I think "learnxinyminutes" is probably all the notes I really need to worry about...?
 
 ## things I've learndeded
 
@@ -13,6 +15,7 @@ little python projects / homework / etc used to learn
 
 ### Extra Notes
 
+- if you are getting weird errors, dump the terminal with the trashcan 🗑️
 - and has a higher priority than or.
     Either add parentheses to be safe or break up your expression into smaller parts and assign each part to a variable. This will make your code clear, readable, and unambiguous, and will save you from painful mistakes.
 - not has higher priority than or if there are no parentheses

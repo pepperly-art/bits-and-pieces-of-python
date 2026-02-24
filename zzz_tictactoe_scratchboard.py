@@ -1,3 +1,45 @@
+def winner(board):
+    if winning_line(board) or row_winner(board) or column_winner(board) or diagonal_winner(board):
+        return True
+    else:
+        return False
+
+def winning_line(strings):
+    piece = strings[0]
+    if piece == ' ':
+        return False
+    for entry in strings:
+        if piece != entry:
+            return False
+    return True
+
+def row_winner(board):
+    for row in board:
+        if winning_line(row):
+            return True
+    return False
+
+def column_winner(board):
+    for col in range(len(board[0])):
+        column = []
+        for row in board:
+            column.append(row[col])
+        if winning_line(column):
+            return True
+    return False
+
+def diagonal_winner(board):
+    diagonal1 = []
+    diagonal2 = []
+    for i in range(len(board)):
+        diagonal1.append(board[i][i])
+        diagonal2.append(board[i][-i-1])
+    return winning_line(diagonal1) or winning_line(diagonal2)
+
+
+
+# here's my overcomplicated code.... above is a much a clearer version. ah.
+
 board = [
             ['A', 'A', ' ', 'B', 'B', 'B'],
             [' ', 'A', 'B', 'A', 'B', 'B'],
@@ -53,9 +95,50 @@ def column_winner(board):
             print(f"{b} vs {a} is FALSE")
             pass
     return False
+
+def diagonal_winner(board):
+    print(" -------------------------------- ")
+    print("     DIAGONAL CHECK ")
+    # check board length
+    board_length = (len(board))-1
+    # check top left corner and make array
+    check_first = board[0][0]
+    check_second = board[0][board_length]
+    print(f"top diagonals: {check_first} and {check_second}")
+    matching = []
+    diagonal = []
+    matching_2 = []
+    diagonal_2 = []
+    for entry in range(len(board)):
+        matching.append(board[0][0])
+        diagonal.append(board[entry][entry])
+        matching_2.append(board[0][board_length])
+        diagonal_2.append(board[entry][(entry * -1) - 1])
+        #print(f"""
+        #entry: {entry} | {(entry * -1) - 1}
+        #what I need is 0,-1 1,-2 2,-3, 3,-4
+        #or             0, 3 1, 2 2, 1, 3, 0
+        #""")
+    a = matching
+    b = diagonal
+    c = matching_2
+    d = diagonal_2
+    print(f"{b} vs {a} check, first")
+    print(f"{d} vs {c} check, second")
+    if a == b and check_first != ' ':
+        print(f"{b} vs {a} is TRUE")
+        return True
+    elif c == d and check_second != ' ':
+        print(f"{d} vs {c} is TRUE")
+        return True
+    else:
+        print(f"{b} vs {a} is FALSE")
+        print(f"{c} vs {d} is FALSE")
+        pass
+    return False
     
-column_winner(board)
-row_winner(board)
+#column_winner(board)
+#row_winner(board)
 
 
 
