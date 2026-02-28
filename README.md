@@ -21,15 +21,16 @@ I think "learnxinyminutes" is probably all the notes I really need to worry abou
 - not has higher priority than or if there are no parentheses
 - not also has higher priority than and
 
+```'
 if x:
     return False
 else:
     return True
-
+```
 is equal to
-
+```
 return not x
-
+```
 
 In addition to the above comparison operator Python uses:
 
@@ -37,3 +38,11 @@ In addition to the above comparison operator Python uses:
 - is not: Returns true if both variables are not the same object(x is not y)
 - in: Returns True if the queried list contains a certain item(x in y)
 - not in: Returns True if the queried list doesn't have a certain item(x not in y)
+
+```
+\n: new line
+\t: Tab means(8 spaces)
+\\: Back slash
+\': Single quote (')
+\": Double quote (")
+```
