@@ -2,7 +2,7 @@
 little python projects / homework / etc used to learn
 
 ## links
-[Python Cheat sheet](https://quickref.me/python.html) | [Future Coder](https://futurecoder.io/course/) | [30 days of Python](https://github.com/Asabeneh/30-Days-Of-Python) | [learnxinyminutes](https://learnxinyminutes.com/python/)
+[Python Cheat sheet](https://quickref.me/python.html) | [Future Coder](https://futurecoder.io/course/) | [30 days of Python](https://github.com/Asabeneh/30-Days-Of-Python) | [learnxinyminutes](https://learnxinyminutes.com/python/) | [Formatting Strings](https://www.programiz.com/python-programming/methods/string/format)
 
 I think "learnxinyminutes" is probably all the notes I really need to worry about...?
 
@@ -21,6 +21,13 @@ I think "learnxinyminutes" is probably all the notes I really need to worry abou
 - not has higher priority than or if there are no parentheses
 - not also has higher priority than and
 
+### Day 03 course comparisons
+
+- is: Returns true if both variables are the same object(x is y)
+- is not: Returns true if both variables are not the same object(x is not y)
+- in: Returns True if the queried list contains a certain item(x in y)
+- not in: Returns True if the queried list doesn't have a certain item(x not in y)
+
 ```'
 if x:
     return False
@@ -32,13 +39,7 @@ is equal to
 return not x
 ```
 
-In addition to the above comparison operator Python uses:
-
-- is: Returns true if both variables are the same object(x is y)
-- is not: Returns true if both variables are not the same object(x is not y)
-- in: Returns True if the queried list contains a certain item(x in y)
-- not in: Returns True if the queried list doesn't have a certain item(x not in y)
-
+### Day 04 escape sequences
 ```
 \n: new line
 \t: Tab means(8 spaces)
