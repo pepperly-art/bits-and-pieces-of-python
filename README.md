@@ -59,3 +59,9 @@ print(tenth)          # 10
 ```
 *rest ????? neat
 
+### Day 7 set
+```
+out of order lists?
+update([list, item]) to add things to the set
+find things 'in' with 'item in set'
+```
