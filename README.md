@@ -65,3 +65,18 @@ out of order lists?
 update([list, item]) to add things to the set
 find things 'in' with 'item in set'
 ```
+
+### Day 8 set
+```
+Accessing with [] is cool when there's a list or dict inside the dict, like
+entry['key1']['subkey0'] or 
+entry['key2'][0]
+
+entry.get('invalid_key') can get it similarly, but will be None if not there
+```
+
+## Day 9 set
+- conditionals!
+- remember:
+- greaterthan or equal to >=
+- lessthan or equal to <=
